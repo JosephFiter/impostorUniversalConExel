@@ -406,3 +406,24 @@ body {
   animation: brillo 2s infinite;
 }
 
+
+.lista-nombres {
+  margin-top: 25px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  border: 2px solid #ff3366;
+  max-height: 320px;
+  overflow-y: auto;
+  font-size: 1.1rem;
+}
+
+.lista-nombres li {
+  padding: 10px 0;
+  color: #ffccdd;
+  border-bottom: 1px dashed rgba(255, 51, 102, 0.4);
+}
+
+.lista-nombres li:last-child {
+  border-bottom: none;
+}

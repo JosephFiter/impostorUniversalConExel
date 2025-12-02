@@ -87,7 +87,7 @@ export default function Juegocompetitivo() {
             <h2 className="impostor grande">¡ERES EL IMPOSTOR!</h2>
           ) : (
             <>
-              <h2 className="tripulante">Tu objetivo es proteger a:</h2>
+              <h2 className="tripulante">El personaje es:</h2>
               <h1 className="objetivo-nombre">{objetivo}</h1>
             </>
           )}
