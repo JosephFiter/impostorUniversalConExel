@@ -255,3 +255,154 @@ body {
   cursor: not-allowed;
   transform: none;
 }
+
+.juego-screen {
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.instruccion {
+  font-size: 1.5rem;
+  color: #ff99bb;
+}
+
+.btn-grande {
+  padding: 30px 60px;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #ff3366, #ff6699);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 900;
+  box-shadow: 0 10px 30px rgba(255, 51, 102, 0.6);
+}
+
+.rol-revelado {
+  animation: aparecer 0.8s ease-out;
+}
+
+@keyframes aparecer {
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.impostor {
+  font-size: 3rem;
+  color: #ff0000;
+  text-shadow: 0 0 30px #ff0000;
+  animation: latido 1.5s infinite;
+}
+
+.tripulante {
+  font-size: 2.2rem;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.nombre-jugador {
+  margin: 30px 0;
+  font-size: 2rem;
+  color: #ff99ff;
+}
+
+.btn-siguiente {
+  margin-top: 60px;
+  padding: 20px 50px;
+  font-size: 1.8rem;
+  background: #ff3366;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-weight: 900;
+}
+
+
+
+.fuego {
+  font-size: 2.2rem;
+  color: #ff0066;
+  text-shadow: 0 0 20px #ff0000;
+  margin: 20px 0;
+  animation: parpadeo 1.5s infinite;
+}
+
+.objetivo-nombre {
+  font-size: 3.5rem;
+  color: #00ff00;
+  text-shadow: 0 0 30px #00ff00;
+  margin: 30px 0;
+  font-weight: 900;
+  animation: pulso-verde 2s infinite;
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes pulso-verde {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.final {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+
+
+@keyframes pulso-fondo {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.inicio-juego {
+  font-size: 3.5rem !important;
+  color: #ff0000;
+  text-shadow: 0 0 40px #ff0000, 0 0 80px #ff0000;
+  animation: latido-rojo 1.8s infinite;
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 900;
+}
+
+@keyframes latido-rojo {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.contador-impostores {
+  margin: 60px 0;
+  font-size: 1.8rem;
+  color: #ff3366;
+  text-shadow: 0 0 20px #ff3366;
+  font-weight: bold;
+}
+
+.btn-terminar {
+  padding: 22px 60px;
+  font-size: 1.8rem;
+  background: #ff0033;
+  color: white;
+  border: 4px solid #ff3366;
+  border-radius: 20px;
+  font-weight: 900;
+  box-shadow: 0 0 40px rgba(255, 0, 51, 0.7);
+  animation: brillo 2s infinite;
+}
+
