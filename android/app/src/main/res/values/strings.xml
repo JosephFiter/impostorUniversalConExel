@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Impostor Universal</string>
+    <string name="title_activity_main">Impostor Universal</string>
+    <string name="package_name">com.josephfiter.impostoruniversal</string>
+    <string name="custom_url_scheme">com.josephfiter.impostoruniversal</string>
+</resources>
